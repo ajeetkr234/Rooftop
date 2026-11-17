@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-navy: #101C2C;
+  --color-secondary-slate: #1B2A3A;
+  --color-accent-copper: #D97736;
+  --color-accent-copper-hover: #C26325;
+  --color-warm-bg: #F8F7F4;
+  --color-white: #FFFFFF;
+  --color-primary-text: #202A35;
+  --color-secondary-text: #697586;
+  --color-border: #E5E7EB;
+
+  --font-heading: 'Plus Jakarta Sans', 'Manrope', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-body);
+    color: var(--color-primary-text);
+    background-color: var(--color-warm-bg);
+  }
+
+  /* Accessible focus indicators */
+  :focus-visible {
+    outline: 2px solid var(--color-accent-copper);
+    outline-offset: 2px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+    color: var(--color-primary-navy);
+  }
+}
+
+/* Custom Utilities for editorial craftsmanship */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Modal and Lightbox body lock helper */
+body.modal-open {
+  overflow: hidden;
+  padding-right: var(--scrollbar-compensation, 0px);
+}
+
+/* High-contrast image overlay gradients */
+.hero-gradient-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 28, 44, 0.82) 0%,
+    rgba(16, 28, 44, 0.72) 50%,
+    rgba(16, 28, 44, 0.92) 100%
+  );
+}
+
+.card-gradient-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 28, 44, 0) 30%,
+    rgba(16, 28, 44, 0.75) 100%
+  );
+}
+

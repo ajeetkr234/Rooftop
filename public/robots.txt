@@ -1,0 +1,7 @@
+# robots.txt for Roofing Contractor Website
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://yourroofingcompany.example.com/sitemap.xml
+

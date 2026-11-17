@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101C2C" />
+    <title>YOUR ROOFING COMPANY | Reliable Roofing & Lasting Protection</title>
+    <meta name="description" content="Professional roof installation, dependable repairs, and preventive maintenance designed to protect your property. Itemized estimates and precision craftsmanship." />
+    <link rel="canonical" href="https://yourroofingcompany.example.com/" />
+
+    <!-- Open Graph / Social Sharing Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourroofingcompany.example.com/" />
+    <meta property="og:title" content="YOUR ROOFING COMPANY | Reliable Roofing & Lasting Protection" />
+    <meta property="og:description" content="Professional roof installation, dependable repairs, and preventive maintenance designed to protect your property." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="YOUR ROOFING COMPANY | Reliable Roofing & Lasting Protection" />
+    <meta name="twitter:description" content="Professional roof installation, dependable repairs, and preventive maintenance designed to protect your property." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Structured Data (RoofingContractor Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RoofingContractor",
+      "name": "YOUR ROOFING COMPANY",
+      "description": "Professional roofing contractor specializing in roof installation, leak repair, and preventive maintenance.",
+      "url": "https://yourroofingcompany.example.com",
+      "telephone": "+15550197663",
+      "email": "inquiries@yourroofingcompany.example.com",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:30",
+          "closes": "17:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday"],
+          "opens": "08:00",
+          "closes": "13:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Roofing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roof Installation",
+              "description": "Professional roof installation for suitable new construction and replacement projects."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roof Repair",
+              "description": "Assessment and repair of leaks, damaged roofing, and related roofing problems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roof Maintenance",
+              "description": "Preventive inspections and maintenance designed to help identify roofing issues early."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Enforce landing on home page on browser refresh / reload -->
+    <script>
+      (function() {
+        if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual';
+        }
+        try {
+          var navEntries = performance.getEntriesByType('navigation');
+          var isReload = (navEntries && navEntries.length > 0 && navEntries[0].type === 'reload') ||
+                         (performance.navigation && performance.navigation.type === 1);
+          if (isReload) {
+            if (window.location.pathname !== '/' || window.location.hash) {
+              window.history.replaceState(null, '', '/');
+            }
+            window.scrollTo(0, 0);
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-brand-warm text-brand-dark font-sans antialiased selection:bg-brand-copper selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
